@@ -7,3 +7,4 @@ dev-server.log
 *.local
 .DS_Store
 Thumbs.db
+config.bat
