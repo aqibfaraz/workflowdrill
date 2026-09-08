@@ -1,0 +1,18 @@
+{
+  "default_branch": "capstone-1",
+  "branches": [
+    "capstone-1",
+    "capstone-2",
+    "origin"
+  ],
+  "parent": {
+    "capstone-1": null,
+    "capstone-2": "capstone-1",
+    "origin": "capstone-1"
+  },
+  "order": [
+    "capstone-1",
+    "capstone-2",
+    "origin"
+  ]
+}
