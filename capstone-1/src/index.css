@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #6c5ce7;
+}
+
+.main-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.main-nav a:hover {
+  color: #6c5ce7;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #111;
+  color: #111;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 60px;
+}
+
+.hero-heading {
+  font-size: 64px;
+  line-height: 1.1;
+  max-width: 900px;
+  margin-bottom: 80px;
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.social-proof .avatars {
+  display: flex;
+}
+
+.social-proof .avatars img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  margin-left: -12px;
+  background: #eee;
+}
+
+.social-proof .avatars img:first-child {
+  margin-left: 0;
+}
+
+.social-proof .stars {
+  color: #f1c40f;
+  margin-top: 12px;
+  letter-spacing: 2px;
+}
+
+.social-proof .trusted {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.hero-intro {
+  max-width: 360px;
+  text-align: right;
+}
+
+.hero-intro p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-intro .btn {
+  margin-left: auto;
+}
+
+/* Basic responsive */
+@media (max-width: 800px) {
+  .site-header,
+  .hero {
+    padding: 20px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hero-heading {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-intro {
+    text-align: left;
+  }
+
+  .hero-intro .btn {
+    margin-left: 0;
+  }
+}
