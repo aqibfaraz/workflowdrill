@@ -1,0 +1,9 @@
+# dependencies / build output (per-project .gitignore files also cover these)
+node_modules/
+dist/
+
+# local dev noise
+dev-server.log
+*.local
+.DS_Store
+Thumbs.db
